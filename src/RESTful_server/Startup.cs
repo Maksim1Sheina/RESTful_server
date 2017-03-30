@@ -44,7 +44,7 @@ namespace RESTful_server
 
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
-
+             
             services.AddMvc();
         }
 
