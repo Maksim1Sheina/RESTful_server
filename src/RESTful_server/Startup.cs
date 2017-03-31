@@ -53,6 +53,8 @@ namespace RESTful_server
         {
             app.UseCors("TestPolicy");
 
+            app.UseStaticFiles();
+
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
 
